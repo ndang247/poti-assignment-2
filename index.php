@@ -109,8 +109,8 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
   </footer>
 
   <!-- Availability alert -->
-  <div class="alert alert-dismissible fade show availability-alert mb-0" role="alert" id="alert">
-    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert()"></button>
+  <div class="alert fade show availability-alert mb-0" role="alert" id="alert">
+    <!-- <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert()"></button> -->
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
