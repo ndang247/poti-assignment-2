@@ -2,6 +2,7 @@
     "status": "OK",
     "products": [
         {
+            "id": "1",
             "category": "sedan",
             "availability": true,
             "brand": "BMW",
@@ -14,6 +15,7 @@
             "description": ""
         },
         {
+            "id": "2",
             "category": "sedan",
             "availability": true,
             "brand": "Toyota",
@@ -26,6 +28,7 @@
             "description": ""
         },
         {
+            "id": "3",
             "category": "wagon",
             "availability": false,
             "brand": "Nissan",
@@ -38,6 +41,7 @@
             "description": ""
         },
         {
+            "id": "4",
             "category": "suv",
             "availability": true,
             "brand": "Jeep",
@@ -50,6 +54,7 @@
             "description": ""
         },
         {
+            "id": "5",
             "category": "sedan",
             "availability": true,
             "brand": "Honda",
@@ -62,6 +67,7 @@
             "description": ""
         },
         {
+            "id": "6",
             "category": "suv",
             "availability": true,
             "brand": "Mercedes",
@@ -74,6 +80,7 @@
             "description": ""
         },
         {
+            "id": "7",
             "category": "sedan",
             "availability": true,
             "brand": "Volkswagen",
@@ -86,6 +93,7 @@
             "description": ""
         },
         {
+            "id": "8",
             "category": "wagon",
             "availability": false,
             "brand": "Suzuki",
@@ -98,6 +106,7 @@
             "description": ""
         },
         {
+            "id": "9",
             "category": "sedan",
             "availability": true,
             "brand": "Hyundai",
@@ -110,6 +119,7 @@
             "description": ""
         },
         {
+            "id": "10",
             "category": "suv",
             "availability": false,
             "brand": "Nissan",
