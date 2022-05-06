@@ -42,3 +42,7 @@
 .active-availability-alert {
     visibility: visible;
 }
+
+.footer {
+    background-color: #e3f2fd;
+}

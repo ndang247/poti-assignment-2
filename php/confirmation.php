@@ -109,16 +109,43 @@
                     <p>Thank you for choosing Hertz-UTS!</p>
                     <p>Please finalise your payment to process the order further.</p>
                     <p>Order Time: " . $time . " " . $date . "</p>";
-                    unset($_SESSION['reservationCart']);
-                    session_unset();
-                    session_destroy();
-                    // Test to see if the session cart is destroy after unset
-                    if (isset($_SESSION['reservationCart'])) print_r($_SESSION['reservationCart']);
                 }
                 ?>
             </div>
         </div>
     </main>
+
+    <?php
+    if (isset($_SESSION['reservationCart'])) {
+        echo "
+        <div class='footer'>
+            <footer class='container py-5 mt-4'>
+                <ul class='nav justify-content-center'>
+                    <li class='nav-item'><a href='../index.php' class='nav-link px-2 text-muted'>Home</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our cars</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our service</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>About us</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Policy</a></li>
+                </ul>
+                <ul class='nav justify-content-center py-3'>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'><b>Contact us: </b></a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Phone: 04xx xxx xxx</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Email: info@hertzuts.com</a></li>
+                </ul>
+                <div class='d-flex justify-content-center py-4 border-top'>
+                    <p>© <script>
+                        document.write(new Date().getFullYear())
+                    </script> Hertz-UTS, Inc. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>";
+        unset($_SESSION['reservationCart']);
+        session_unset();
+        session_destroy();
+        // Test to see if the session cart is destroy after unset
+        if (isset($_SESSION['reservationCart'])) print_r($_SESSION['reservationCart']);
+    }
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 

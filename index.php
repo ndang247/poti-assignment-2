@@ -90,7 +90,7 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
     </div>
   </main>
 
-  <footer class="py-3 mt-4" style="background-color: #e3f2fd">
+  <!-- <footer class="py-3 mt-4 footer-fixed">
     <ul class="nav justify-content-center">
       <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our cars</a></li>
@@ -106,7 +106,40 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
     <p class="text-center text-muted">&copy; <script>
         document.write(new Date().getFullYear())
       </script> Hertz-UTS, Inc</p>
-  </footer>
+  </footer> -->
+
+  <div class="footer">
+    <footer class="container py-5 mt-4">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our cars</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our service</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About us</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Policy</a></li>
+    </ul>
+    <ul class="nav justify-content-center py-3">
+      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted"><b>Contact us: </b></a></li>
+      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Phone: 04xx xxx xxx</a></li>
+      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Email: info@hertzuts.com</a></li>
+    </ul>
+      <div class="d-flex justify-content-center py-4 border-top">
+        <p>© <script>
+            document.write(new Date().getFullYear())
+          </script> Hertz-UTS, Inc. All rights reserved.</p>
+        <!-- <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul> -->
+      </div>
+    </footer>
+  </div>
 
   <!-- Availability alert -->
   <div class="alert fade show availability-alert mb-0" role="alert" id="alert">

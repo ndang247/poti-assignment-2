@@ -1,13 +1,4 @@
-.table-img {
-    width: 40%;
-}
-
-.empty-cart {
-    color: #CCCCCC;
-    font-size: 30px;
-}
-
-.btn-checkout {
+.btn-continue {
     color: #fff;
     border: none;
     border-radius: 30px;
