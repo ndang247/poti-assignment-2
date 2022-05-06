@@ -1,16 +1,16 @@
 <?php
 include("model/class.Car.php");
 
-$bmw = new Car("1", "sedan", true, "BMW", "320i", "2019", "4398", "Petrol", "5", "260", "");
-$camry = new Car("2", "sedan", true, "Toyota", "Camry", "2018", "18930", "Petrol", "5", "150", "");
-$captiva = new Car("3", "wagon", false, "Holden", "Captiva", "2018", "6230", "Petrol", "7", "200", "");
-$cherokee = new Car("4", "suv", true, "Jeep", "Cherokee", "2018", "6481", "Petrol", "7", "230", "");
-$civic = new Car("5", "sedan", true, "Honda", "Civic", "2017", "20130", "Petrol", "5", "180", "");
-$glc = new Car("6", "suv", true, "Mercedes", "GLC", "2016", "40436", "Petrol", "5", "280", "");
-$golf = new Car("7", "sedan", true, "Volkswagen", "Golf", "2015", "25321", "Petrol", "5", "210", "");
-$jimny = new Car("8", "wagon", false, "Suzuki", "Jimny", "2019", "2001", "Diesel", "5", "140", "");
-$sonata = new Car("9", "sedan", true, "Hyundai", "Sonata", "2013", "77892", "Petrol", "5", "120", "");
-$xTrail = new Car("10", "suv", false, "Nissan", "X-Trail", "2016", "27675", "Petrol", "7", "170", "");
+$bmw = new Car("1", "Sedan", true, "BMW", "320i", "2019", "4328", "Petrol", "5", "260", "xxxxx");
+$camry = new Car("2", "Sedan", true, "Toyota", "Camry", "2018", "14630", "Petrol", "5", "150", "xxxxx");
+$captiva = new Car("3", "Wagon", false, "Holden", "Captiva", "2018", "6510", "Petrol", "7", "200", "xxxxx");
+$cherokee = new Car("4", "Suv", true, "Jeep", "Cherokee", "2018", "4398", "Petrol", "7", "230", "xxxxx");
+$civic = new Car("5", "Sedan", true, "Honda", "Civic", "2017", "21240", "Petrol", "5", "180", "xxxxx");
+$glc = new Car("6", "Suv", true, "Mercedes", "GLC", "2016", "42656", "Petrol", "5", "280", "xxxxx");
+$golf = new Car("7", "Sedan", true, "Volkswagen", "Golf", "2015", "23311", "Petrol", "5", "210", "xxxxx");
+$jimny = new Car("8", "Wagon", false, "Suzuki", "Jimny", "2019", "3728", "Diesel", "5", "140", "xxxxx");
+$sonata = new Car("9", "Sedan", true, "Hyundai", "Sonata", "2013", "82722", "Petrol", "5", "120", "xxxxx");
+$xTrail = new Car("10", "Suv", false, "Nissan", "X-Trail", "2016", "32472", "Petrol", "7", "170", "xxxxx");
 
 $cars = array(
   "status" => "OK",
