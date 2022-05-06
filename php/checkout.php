@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <title>Checkout</title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <nav class="navbar navbar-expand-lg navbar-light sticky" style="background-color: #e3f2fd">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.php">Hertz-UTS</a>
@@ -35,14 +35,10 @@
         </div>
     </nav>
 
-    <main>
-        <div class="container pt-5">
-            <div class="pt-5 p-2">
+    <main class="flex-shrink-0">
+        <div class="container pt-5 pb-5">
+            <div class="pt-5 pb-2">
                 <h1 class="text-center">Checkout</h1>
-                <?php
-                session_start();
-                print_r($_SESSION['reservationCart']);
-                ?>
             </div>
             <div>
                 <h3>Customer Details and Payment</h3>
@@ -170,10 +166,10 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="my-4">
+                    <hr class="my-5">
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <input id="purchaseBtn" class="w-100 btn btn-primary btn-continue" type="submit" value="Continue">
-                        <button id="loadingBtn" class="w-100 btn btn-primary" type="button" disabled hidden>
+                        <button id="loadingBtn" class="w-100 btn btn-loading" type="button" disabled hidden>
                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Loading...
                         </button>
@@ -183,38 +179,27 @@
         </div>
     </main>
 
-    <div class="footer">
-        <footer class="container py-5 mt-4">
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a href="../index.php" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our cars</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our service</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Policy</a></li>
+    <footer class="footer mt-auto footer-color">
+        <div class="container py-4 mt-4">
+            <ul class='nav justify-content-center'>
+                <li class='nav-item'><a href='../index.php' class='nav-link px-2 text-muted'>Home</a></li>
+                <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our cars</a></li>
+                <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our service</a></li>
+                <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>About us</a></li>
+                <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Policy</a></li>
             </ul>
-            <ul class="nav justify-content-center py-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><b>Contact us: </b></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Phone: 04xx xxx xxx</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Email: info@hertzuts.com</a></li>
+            <ul class='nav justify-content-center py-3'>
+                <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'><b>Contact us: </b></a></li>
+                <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Phone: 04xx xxx xxx</a></li>
+                <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Email: info@hertzuts.com</a></li>
             </ul>
-            <div class="d-flex justify-content-center py-4 border-top">
+            <div class='d-flex justify-content-center py-4 border-top'>
                 <p>© <script>
                         document.write(new Date().getFullYear())
                     </script> Hertz-UTS, Inc. All rights reserved.</p>
-                <!-- <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
-        </ul> -->
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/checkoutValidation.js"></script>
 </body>

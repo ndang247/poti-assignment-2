@@ -37,8 +37,8 @@
     </nav>
 
     <main class="flex-shrink-0">
-        <div class="container pt-5 pb-5">
-            <div class="pt-5 pb-2">
+        <div class="container pt-5">
+            <div class="pt-5 p-2">
                 <h1 class="text-center">
                     <?php
                     session_start();

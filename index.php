@@ -32,7 +32,7 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="UTF-8" />
@@ -43,7 +43,8 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
   <title>Hertz-UTS</title>
 </head>
 
-<body onload="showCars();">
+<body onload="showCars();" class="d-flex flex-column h-100">
+
   <nav class="navbar navbar-expand-lg navbar-light sticky" style="background-color: #e3f2fd">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Hertz-UTS</a>
@@ -66,9 +67,9 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
     </div>
   </nav>
 
-  <main>
+  <main class="flex-shrink-0">
     <div class="container pt-5">
-      <div class="pt-5 p-2 d-flex justify-content-around flex-wrap" id="cars">
+      <div class="pt-5 pb-5 d-flex justify-content-around flex-wrap" id="cars">
         <!-- <div class="card mb-5" style="width: 18rem">
             <img src="./images/320i.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -90,56 +91,27 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
     </div>
   </main>
 
-  <!-- <footer class="py-3 mt-4 footer-fixed">
-    <ul class="nav justify-content-center">
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our cars</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our service</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About us</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Policy</a></li>
-    </ul>
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted"><b>Contact us: </b></a></li>
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Phone: 04xx xxx xxx</a></li>
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Email: info@hertzuts.com</a></li>
-    </ul>
-    <p class="text-center text-muted">&copy; <script>
-        document.write(new Date().getFullYear())
-      </script> Hertz-UTS, Inc</p>
-  </footer> -->
-
-  <div class="footer">
-    <footer class="container py-5 mt-4">
-    <ul class="nav justify-content-center">
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our cars</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our service</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About us</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Policy</a></li>
-    </ul>
-    <ul class="nav justify-content-center py-3">
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted"><b>Contact us: </b></a></li>
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Phone: 04xx xxx xxx</a></li>
-      <li class="nav-item"><a href="index.php" class="nav-link px-2 text-muted">Email: info@hertzuts.com</a></li>
-    </ul>
-      <div class="d-flex justify-content-center py-4 border-top">
+  <footer class="footer mt-auto footer-color">
+    <div class="container py-4 mt-4">
+      <ul class='nav justify-content-center'>
+        <li class='nav-item'><a href='../index.php' class='nav-link px-2 text-muted'>Home</a></li>
+        <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our cars</a></li>
+        <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our service</a></li>
+        <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>About us</a></li>
+        <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Policy</a></li>
+      </ul>
+      <ul class='nav justify-content-center py-3'>
+        <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'><b>Contact us: </b></a></li>
+        <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Phone: 04xx xxx xxx</a></li>
+        <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Email: info@hertzuts.com</a></li>
+      </ul>
+      <div class='d-flex justify-content-center py-4 border-top'>
         <p>© <script>
             document.write(new Date().getFullYear())
           </script> Hertz-UTS, Inc. All rights reserved.</p>
-        <!-- <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
-        </ul> -->
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <!-- Availability alert -->
   <div class="alert fade show availability-alert mb-0" role="alert" id="alert">
@@ -148,6 +120,7 @@ file_put_contents("data/cars.json", json_encode($cars, JSON_PRETTY_PRINT));
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
+
 </body>
 
 </html>
