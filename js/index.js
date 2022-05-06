@@ -82,8 +82,8 @@ function showCars() {
                 // var product = products[i];
 
                 var card = document.createElement("div");
-                card.className = "card mb-5";
-                card.style.width = "18rem";
+                card.className = "card mb-5 car-box";
+                // card.style.width = "18rem";
 
                 var img = document.createElement("img");
                 img.className = "card-img-top";

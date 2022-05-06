@@ -3,7 +3,7 @@ include("model/class.Car.php");
 
 $bmw = new Car("1", "sedan", true, "BMW", "320i", "2019", "4398", "Petrol", "5", "260", "");
 $camry = new Car("2", "sedan", true, "Toyota", "Camry", "2018", "18930", "Petrol", "5", "150", "");
-$captiva = new Car("3", "wagon", false, "Nissan", "Captiva", "2018", "6230", "Petrol", "7", "200", "");
+$captiva = new Car("3", "wagon", false, "Holden", "Captiva", "2018", "6230", "Petrol", "7", "200", "");
 $cherokee = new Car("4", "suv", true, "Jeep", "Cherokee", "2018", "6481", "Petrol", "7", "230", "");
 $civic = new Car("5", "sedan", true, "Honda", "Civic", "2017", "20130", "Petrol", "5", "180", "");
 $glc = new Car("6", "suv", true, "Mercedes", "GLC", "2016", "40436", "Petrol", "5", "280", "");

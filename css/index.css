@@ -46,3 +46,15 @@
 .footer {
     background-color: #e3f2fd;
 }
+
+.car-box {
+    width: 18rem;
+    box-shadow: 0px 8px 45px 1px rgba(11, 11, 11, 0.08);
+    transition: all 0.3s ease;
+}
+
+.car-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 5px 5px rgba(6, 6, 6, 0.08);
+    border: none;
+}

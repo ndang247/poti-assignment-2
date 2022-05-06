@@ -81,38 +81,32 @@
         </div>
     </main>
 
-    <div class="footer">
-        <footer class="container py-5 mt-4">
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a href="../index.php" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our cars</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Our service</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About us</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Policy</a></li>
-            </ul>
-            <ul class="nav justify-content-center py-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted"><b>Contact us: </b></a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Phone: 04xx xxx xxx</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Email: info@hertzuts.com</a></li>
-            </ul>
-            <div class="d-flex justify-content-center py-4 border-top">
-                <p>© <script>
+    <?php
+    if (isset($_SESSION['reservationCart'])) {
+        echo "
+        <div class='footer'>
+            <footer class='container py-5 mt-4'>
+                <ul class='nav justify-content-center'>
+                    <li class='nav-item'><a href='../index.php' class='nav-link px-2 text-muted'>Home</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our cars</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Our service</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>About us</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Policy</a></li>
+                </ul>
+                <ul class='nav justify-content-center py-3'>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'><b>Contact us: </b></a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Phone: 04xx xxx xxx</a></li>
+                    <li class='nav-item'><a href='#' class='nav-link px-2 text-muted'>Email: info@hertzuts.com</a></li>
+                </ul>
+                <div class='d-flex justify-content-center py-4 border-top'>
+                    <p>© <script>
                         document.write(new Date().getFullYear())
                     </script> Hertz-UTS, Inc. All rights reserved.</p>
-                <!-- <ul class="list-unstyled d-flex">
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use>
-              </svg></a></li>
-          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use>
-              </svg></a></li>
-        </ul> -->
-            </div>
-        </footer>
-    </div>
+                </div>
+            </footer>
+        </div>";
+    }
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="../js/reservation.js"></script>
