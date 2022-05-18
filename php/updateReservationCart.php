@@ -23,7 +23,7 @@ if (isset($contentArray) && is_array($contentArray)) {
         }
     }
 
-    // If the car is found in the cart, update the rent days and cost and echo found, else add it to the cart and echo -1
+    // If the car is found in the cart, update the rent days and cost and echo found, else add it to the cart and echo Ok
     if ($found) {
         for ($i = 0; $i < sizeof($_SESSION['reservationCart']); $i++) {
             if ($_SESSION['reservationCart'][$i]['id'] == $contentArray['id']) {
@@ -51,7 +51,7 @@ if (isset($contentArray) && is_array($contentArray)) {
             'rentalDays' => 0,
             'subTotal' => 0
         ));
-        echo -1;
+        echo "Ok";
     }
 
     // print_r($_SESSION['reservationCart']);
@@ -63,8 +63,8 @@ if (isset($contentArray) && is_array($contentArray)) {
         // break;
         if ($car['id'] == $id) {
             array_splice($_SESSION['reservationCart'], $key, 1);
-            // After deleting the car, echo 2 to indicate that the car is deleted
-            echo 2;
+            // After deleting the car, echo Deleted to indicate that the car is deleted
+            echo "Deleted";
             break;
         }
     }

@@ -53,7 +53,7 @@ const reserve = (car) => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if (this.responseText == "-1") {
+            if (this.responseText === "Ok") {
                 customAlert("You have successfully add the car to your reservation cart", "add");
             }
             else {

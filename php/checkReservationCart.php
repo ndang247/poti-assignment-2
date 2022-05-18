@@ -12,13 +12,13 @@ session_start();
 if (isset($_SESSION['reservationCart']) && is_array($_SESSION['reservationCart'])) {
     // Check if the cart is empty
     if (empty($_SESSION['reservationCart'])) {
-        echo 0;
+        echo "Empty";
     } else {
-        // If the cart is not empty, echo 1
-        echo 1;
+        // If the cart is not empty, echo Ok
+        echo "Ok";
     }
 } else {
     // If the cart is not set, echo 0
-    echo 0;
+    echo "Empty";
 }
 ?>

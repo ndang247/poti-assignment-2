@@ -2,7 +2,8 @@ const cartValidation = () => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if (this.responseText == "0") {
+            console.log(this.responseText);
+            if (this.responseText === "Empty") {
                 alert("No car has been reserved.");
                 // Redirect to home page if no car has been reserved.
                 window.location.href = "../index.php";
