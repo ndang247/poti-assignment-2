@@ -15,22 +15,26 @@ const cartValidation = () => {
     xhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
     xhttp.send();
 
-    let rentalDays = document.querySelectorAll("#numRentalDays");
-    // console.log(rentalDays);
-    let carIds = document.querySelectorAll("#carId");
-    // console.log(carIds);
-
-    for (const rentDay of rentalDays) {
-        // Check for decimal, string input, negative numbers and the number of days in a month
-        const day = parseFloat(rentDay.value);
-        // console.log(day);
-        if (isNaN(day) || day % 1 !== 0 || day < 1 || day > 31) {
-            alert("Please enter a valid day");
-            return false;
+    console.log(this.responseText);
+    if (this.responseText === "Ok") {
+        let rentalDays = document.querySelectorAll("#numRentalDays");
+        // console.log(rentalDays);
+        let carIds = document.querySelectorAll("#carId");
+        // console.log(carIds);
+    
+        for (const rentDay of rentalDays) {
+            // Check for decimal, string input, negative numbers and the number of days in a month
+            const day = parseFloat(rentDay.value);
+            // console.log(day);
+            if (isNaN(day) || day % 1 !== 0 || day < 1) {
+                alert("Please enter a valid day");
+                return false;
+            }
         }
+        updateCart(carIds, rentalDays);
+        return true;
     }
-    updateCart(carIds, rentalDays);
-    return true;
+    else return false;
 }
 
 const updateCart = (carIds, rentalDays) => {
