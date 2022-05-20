@@ -33,8 +33,8 @@ const cartValidation = () => {
     return true;
 }
 
-const updateCart = (cardIds, rentalDays) => {
-    for (let i = 0; i < cardIds.length; i++) {
+const updateCart = (carIds, rentalDays) => {
+    for (let i = 0; i < carIds.length; i++) {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -43,6 +43,6 @@ const updateCart = (cardIds, rentalDays) => {
         xhttp.open("POST", "../php/updateReservationCart.php", true);
         // Set request header content-type to json encoded utf-8
         xhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
-        xhttp.send(JSON.stringify({ id: cardIds[i].value, days: rentalDays[i].value }));
+        xhttp.send(JSON.stringify({ id: carIds[i].value, days: rentalDays[i].value }));
     }
 }
