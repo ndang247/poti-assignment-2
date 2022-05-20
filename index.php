@@ -10,7 +10,7 @@ $glc = new Car("6", "Suv", true, "Mercedes", "GLC", "2016", "42656", "Petrol", "
 $golf = new Car("7", "Sedan", true, "Volkswagen", "Golf", "2015", "23311", "Petrol", "5", "210", "xxxxx");
 $jimny = new Car("8", "Wagon", false, "Suzuki", "Jimny", "2019", "3728", "Diesel", "5", "140", "xxxxx");
 $sonata = new Car("9", "Sedan", true, "Hyundai", "Sonata", "2013", "82722", "Petrol", "5", "120", "xxxxx");
-$xTrail = new Car("10", "Suv", false, "Nissan", "X-Trail", "2016", "32472", "Petrol", "7", "170", "xxxxx");
+$xTrail = new Car("10", "Suv", false, "Nissan", "X-trail", "2016", "32472", "Petrol", "7", "170", "xxxxx");
 
 $cars = array(
   "status" => "OK",
