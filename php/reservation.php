@@ -34,7 +34,7 @@
             <div class="pt-5 pb-5">
                 <h1 class="text-center">Car Reservation</h1>
                 <div class="table-responsive">
-                    <form id='reservationCart' method='POST' action='checkout.php' onsubmit='return cartValidation()'>
+                    <form id='reservationCart' method='POST' action='checkout.php' onsubmit='return rentalDaysValidation()'>
                         <?php
                         session_start();
                         // Check if the session reservation cart is set and is an array

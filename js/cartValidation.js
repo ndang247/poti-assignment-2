@@ -2,8 +2,8 @@ const cartValidation = () => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
             if (this.responseText === "Empty") {
+                console.log(this.responseText);
                 alert("No car has been reserved.");
                 // Redirect to home page if no car has been reserved.
                 window.location.href = "../index.php";
@@ -15,13 +15,33 @@ const cartValidation = () => {
     xhttp.setRequestHeader("Content-type", "application/json; charset=utf-8");
     xhttp.send();
 
-    console.log(this.responseText);
-    if (this.responseText === "Ok") {
-        let rentalDays = document.querySelectorAll("#numRentalDays");
-        // console.log(rentalDays);
-        let carIds = document.querySelectorAll("#carId");
-        // console.log(carIds);
-    
+    // let rentalDays = document.querySelectorAll("#numRentalDays");
+    // console.log(rentalDays);
+    // let carIds = document.querySelectorAll("#carId");
+    // console.log(carIds);
+
+    // for (const rentDay of rentalDays) {
+    //     const day = parseFloat(rentDay.value);
+    //     console.log(day);
+    //     Check for decimal, string input, negative numbers and the number of days in a month
+    //     if (isNaN(day) || day % 1 !== 0 || day < 1 || day > 31) {
+    //         alert("Please enter a valid day");
+    //         return false;
+    //     }
+    // }
+    // updateCart(carIds, rentalDays);
+    // return false;
+}
+
+function rentalDaysValidation() {
+    cartValidation();
+
+    let rentalDays = document.querySelectorAll("#numRentalDays");
+    // console.log(rentalDays);
+    let carIds = document.querySelectorAll("#carId");
+    // console.log(carIds);
+
+    if (rentalDays.length > 0 && carIds.length > 0) {
         for (const rentDay of rentalDays) {
             // Check for decimal, string input, negative numbers and the number of days in a month
             const day = parseFloat(rentDay.value);
@@ -32,9 +52,9 @@ const cartValidation = () => {
             }
         }
         updateCart(carIds, rentalDays);
-        console.log("bug");
         return true;
     }
+    else return false;
 }
 
 const updateCart = (carIds, rentalDays) => {
