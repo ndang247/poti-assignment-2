@@ -32,9 +32,9 @@ const cartValidation = () => {
             }
         }
         updateCart(carIds, rentalDays);
+        console.log("bug");
         return true;
     }
-    else return false;
 }
 
 const updateCart = (carIds, rentalDays) => {
