@@ -1,1 +1,1 @@
-# POTI-Assignment-2
+# POTI Assignment 2
